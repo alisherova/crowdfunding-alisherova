@@ -1,10 +1,10 @@
-import CampaignCreationForm from "./pages/CreateCampaign/CampaignCreationForm";
-import CampaignCreationWYSIWYGForm from "./pages/CreateCampaign/CampaignCreationWYSIWYGForm";
+import CampaignCreationForm from "./pages/CreateCampaign/CampaignCreationForm/index.js";
+import CampaignCreationWYSIWYGForm from "./pages/CreateCampaign/CampaignCreationWYSIWYGForm/index.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import GlobalStyles from "./assets/styles/GlobalStyles";
-import SingleCampaign from "./pages/SingleCampaign";
-import { Home } from "./pages/Home";
-import { Navbar } from "./components/Navbar";
+import GlobalStyles from "./assets/styles/GlobalStyles.js";
+import SingleCampaign from "./pages/SingleCampaign/index.js";
+import { Home } from "./pages/Home/index.js";
+import { Navbar } from "./components/Navbar/index.js";
 
 function App() {
   return (

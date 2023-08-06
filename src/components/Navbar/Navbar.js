@@ -11,8 +11,8 @@ import {
   BurgerButton,
   SmallScreenLogo,
   SmallScreenWrapper
-} from "./Navbar.styled";
-
+} from "./Navbar.styled.js";
+import LogoSvg from "../../assets/Logo.svg";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -39,7 +39,7 @@ const Navbar = () => {
       />
       <SmallScreenWrapper>
         <SmallScreenLogo to="/">
-          <LogoImg src="../public/Logo.svg" alt="Crowdfunding logo" />
+          <LogoImg src={LogoSvg} alt="Crowdfunding logo" />
         </SmallScreenLogo>
         <BurgerButton onClick={toggleNav}>
           {!showNavLinks ? <CiMenuBurger /> : <AiOutlineClose />}
@@ -47,7 +47,7 @@ const Navbar = () => {
       </SmallScreenWrapper>
       <NavbarWrapper show={showNavLinks.toString()}>
         <Logo to="/">
-          <LogoImg src="../public/Logo.svg" alt="Crowdfunding logo" />
+          <LogoImg src={LogoSvg} alt="Crowdfunding logo" />
         </Logo>
         <NavbarUl>
           {MENU_ITEMS.map((item, index) => (
