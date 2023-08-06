@@ -10,7 +10,8 @@ import {
   NavbarBtn,
   BurgerButton,
   SmallScreenLogo,
-  SmallScreenWrapper
+  SmallScreenWrapper,
+  NavShadow
 } from "./Navbar.styled.js";
 import LogoSvg from "../../assets/Logo.svg";
 import { CiMenuBurger } from "react-icons/ci";
@@ -37,31 +38,33 @@ const Navbar = () => {
         show={showNavLinks.toString()}
         onClick={() => setShowNavLinks(false)}
       />
-      <SmallScreenWrapper>
-        <SmallScreenLogo to="/">
-          <LogoImg src={LogoSvg} alt="Crowdfunding logo" />
-        </SmallScreenLogo>
-        <BurgerButton onClick={toggleNav}>
-          {!showNavLinks ? <CiMenuBurger /> : <AiOutlineClose />}
-        </BurgerButton>
-      </SmallScreenWrapper>
-      <NavbarWrapper show={showNavLinks.toString()}>
-        <Logo to="/">
-          <LogoImg src={LogoSvg} alt="Crowdfunding logo" />
-        </Logo>
-        <NavbarUl>
-          {MENU_ITEMS.map((item, index) => (
-            <NavbarUlList
-              key={index}
-              active={(activeIndex === index).toString()}
-              onClick={() => handleClick(index)}
-              to={"/"}>
-              {item}
-            </NavbarUlList>
-          ))}
-        </NavbarUl>
-        <NavbarBtn>Xayriya tashkillashtirish</NavbarBtn>
-      </NavbarWrapper>
+      <NavShadow>
+        <SmallScreenWrapper>
+          <SmallScreenLogo to="/">
+            <LogoImg src={LogoSvg} alt="Crowdfunding logo" />
+          </SmallScreenLogo>
+          <BurgerButton onClick={toggleNav}>
+            {!showNavLinks ? <CiMenuBurger /> : <AiOutlineClose />}
+          </BurgerButton>
+        </SmallScreenWrapper>
+        <NavbarWrapper show={showNavLinks.toString()}>
+          <Logo to="/">
+            <LogoImg src={LogoSvg} alt="Crowdfunding logo" />
+          </Logo>
+          <NavbarUl>
+            {MENU_ITEMS.map((item, index) => (
+              <NavbarUlList
+                key={index}
+                active={(activeIndex === index).toString()}
+                onClick={() => handleClick(index)}
+                to={"/"}>
+                {item}
+              </NavbarUlList>
+            ))}
+          </NavbarUl>
+          <NavbarBtn>Xayriya tashkillashtirish</NavbarBtn>
+        </NavbarWrapper>
+      </NavShadow>
     </>
   );
 };

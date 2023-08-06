@@ -56,7 +56,6 @@ export default function CampaignCreationForm() {
 
   return (
     <Form>
-      <h1>Campaign Creation</h1>
       <Label className="imgLabel" htmlFor="image">
         <UploadIcon className="uploadIcon" />
         <span>Asosiy rasmni yuklash</span>

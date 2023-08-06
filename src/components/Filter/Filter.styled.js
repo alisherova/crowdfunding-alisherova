@@ -38,6 +38,10 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 440px) {
     width: 60%;
   }
+
+  @media screen and (max-width: 350px) {
+    width: 70%;
+  }
 `;
 
 export const FilterResponsiveWrapper = styled.div`

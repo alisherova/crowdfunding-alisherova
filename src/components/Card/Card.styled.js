@@ -27,8 +27,8 @@ export const CardWrapper = styled(Link)`
     width: 48%;
   }
 
-  @media screen and (max-width: 450px) {
-    width: 80%;
+  @media screen and (max-width: 350px) {
+    width: 100%;
     margin: 0 auto;
   }
 `;

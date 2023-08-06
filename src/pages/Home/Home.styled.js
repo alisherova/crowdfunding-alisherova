@@ -7,8 +7,9 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: start;
   transition: all 0.3s ease-in-out;
-
+  margin-top: 30px;
   @media screen and (max-width: 800px) {
+    width: 94%;
     flex-direction: column;
   }
 `;
@@ -47,9 +48,10 @@ export const SidebarContainer = styled.div`
     flex-direction: row-reverse;
     align-items: start;
     justify-content: space-between;
+    gap: 15px;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 350px) {
     flex-direction: column;
     gap: 20px;
   }

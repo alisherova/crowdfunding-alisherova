@@ -10,13 +10,18 @@ export const FullPage = styled.div`
   z-index: 9;
 `;
 
+export const NavShadow = styled.div`
+  width: 100%;
+  box-shadow: 0px 1px 20px -3px rgba(0, 0, 0, 0.1);
+`;
+
 export const NavbarWrapper = styled.div`
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 48px 0;
+  padding: 10px 0;
 
   @media screen and (max-width: 800px) {
     width: 94%;
@@ -24,7 +29,7 @@ export const NavbarWrapper = styled.div`
     height: auto;
     background-color: white;
     position: absolute;
-    top: 2%;
+    top: 1.5%;
     left: 3%;
     flex-direction: column;
     justify-content: center;
@@ -42,10 +47,11 @@ export const SmallScreenWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 48px 0;
+  padding: 15px 0;
   transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 800px) {
+    width: 94%;
     display: flex;
   }
 `;
@@ -64,22 +70,21 @@ export const BurgerButton = styled.div`
 `;
 
 export const SmallScreenLogo = styled(Link)`
-  width: 14%;
   display: none;
 
   @media screen and (max-width: 800px) {
+    width: 12%;
     display: flex;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 480px) {
     width: 20%;
   }
 `;
 
 export const Logo = styled(Link)`
-  @media screen and (max-width: 900px) {
-    width: 15%;
-  }
+  width: 10%;
+
   @media screen and (max-width: 800px) {
     display: none;
   }
@@ -167,7 +172,7 @@ export const NavbarBtn = styled.button`
     background-color: #fff;
     color: #ffbf43;
     transition: all 0.2s ease-in;
-  } 
+  }
 
   @media screen and (max-width: 1050px) {
     width: 20%;

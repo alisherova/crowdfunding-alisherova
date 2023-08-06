@@ -21,10 +21,11 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 50%; 
+    font-size: 14px; 
   }
 
-  @media screen and (max-width: 440px) {
-    width: 60%; 
+  @media screen and (max-width: 350px) {
+    width: 100%;   
   }
 `;
 
