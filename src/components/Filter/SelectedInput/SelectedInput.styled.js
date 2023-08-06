@@ -29,5 +29,6 @@ export const Label = styled.label`
 
   @media screen and (max-width: 920px) {
     margin-left: 10px;
+    font-size: 14px;
   }
 `;

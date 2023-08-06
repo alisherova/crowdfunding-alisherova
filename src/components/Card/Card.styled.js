@@ -45,8 +45,13 @@ export const Title = styled.p`
   color: #5c6260;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  line-height: 24px;
   font-weight: 500;
   margin-top: 0;
+
+  @media screen and (max-width: 920px) {
+    font-size: 12px;
+  }
 `;
 
 export const CardContent = styled.div`
@@ -98,7 +103,7 @@ export const SupportBtn = styled.button`
   }
 
   @media screen and (max-width: 920px) {
-    padding: 1px 5px;
+    padding: 5px;
     font-size: 10px;
   }
 `;

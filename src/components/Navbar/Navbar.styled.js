@@ -152,6 +152,7 @@ export const NavbarUlList = styled(Link)`
 
   @media screen and (max-width: 900px) {
     padding: 3px 13px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 800px) {
@@ -187,5 +188,6 @@ export const NavbarBtn = styled.button`
     width: 80%;
     margin-top: 0.8rem;
     padding: 16px 0;
+    font-size: 16px;
   }
 `;

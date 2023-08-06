@@ -5,16 +5,24 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+
+  @media screen and (max-width: 920px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Label = styled.p`
   max-width: 200px;
-  color: #000;
+  color: #5c6260;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+
+  @media screen and (max-width: 920px) {
+    font-size: 14px;
+  }
 `;
 
 export const Select = styled.select`

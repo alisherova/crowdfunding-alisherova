@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease-in-out;
+  margin-top: 5px;
 
   @media (min-width: 800px) {
     display: none;
@@ -25,8 +26,13 @@ export const Text = styled.p`
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 10px;
+  color: #5c6260;
+
+  @media screen and (max-width: 550px) {
+    font-size: 16px;
+  }
 `;
 
 export const CloseButton = styled.div`
