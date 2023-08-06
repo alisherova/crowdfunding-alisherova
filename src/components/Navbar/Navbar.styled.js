@@ -21,7 +21,7 @@ export const NavbarWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 15px 0;
 
   @media screen and (max-width: 800px) {
     width: 94%;
@@ -83,7 +83,11 @@ export const SmallScreenLogo = styled(Link)`
 `;
 
 export const Logo = styled(Link)`
-  width: 10%;
+  width: 7%;
+
+  @media screen and (max-width: 1200px) {
+    width: 10%;
+  }
 
   @media screen and (max-width: 800px) {
     display: none;
