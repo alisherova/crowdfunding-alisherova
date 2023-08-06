@@ -33,7 +33,6 @@ export const NavbarWrapper = styled.div`
     left: 3%;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(4px);
     border-radius: 13px;
     padding: 80px 0 30px;
     transition: all 0.3s ease-in-out;

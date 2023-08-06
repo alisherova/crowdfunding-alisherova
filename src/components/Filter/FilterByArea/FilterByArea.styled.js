@@ -57,4 +57,5 @@ export const Select = styled.select`
 export const Option = styled.option`
   margin-left: 10px;
   margin: 5px 10px;
+  font-size: 14px;
 `;

@@ -49,7 +49,7 @@ export const FilterResponsiveWrapper = styled.div`
 `;
 
 export const LargeCategory = styled.div`
-  animation: ${fadeInAnimation} 0.5s ease-in;
+  animation: ${fadeInAnimation} 0.5s ease-in-out;
 
   @media screen and (max-width: 800px) {
     display: none;
@@ -61,7 +61,7 @@ export const SmallCategory = styled.div`
 
   @media screen and (max-width: 800px) {
     display: block;
-    animation: ${fadeInAnimation} 0.5s ease-in;
+    animation: ${fadeInAnimation} 0.5s ease-in-out;
     position: absolute;
     margin-top: 40px;
     padding: 10px 20px;

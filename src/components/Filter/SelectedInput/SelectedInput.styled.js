@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 920px) {
+    padding-bottom: 15px;
+  }
 `;
 
 export const Input = styled.input`
@@ -17,6 +21,11 @@ export const Input = styled.input`
     min-width: 18px;
     min-height: 18px;
   }
+
+  @media screen and (max-width: 920px) {
+    min-width: 12px;
+    min-height: 12px;
+  }
 `;
 
 export const Label = styled.label`
@@ -29,6 +38,6 @@ export const Label = styled.label`
 
   @media screen and (max-width: 920px) {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
   }
 `;

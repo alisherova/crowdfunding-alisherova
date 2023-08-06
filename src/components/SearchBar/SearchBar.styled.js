@@ -37,5 +37,10 @@ export const SearchInput = styled.input`
   outline: none;
   font-size: 16px;
   font-family: Poppins, sans-serif;
-  padding-top: 4px;
+
+  &::placeholder {
+    @media screen and (max-width: 920px) {
+      font-size: 13px;
+    }
+  }
 `;

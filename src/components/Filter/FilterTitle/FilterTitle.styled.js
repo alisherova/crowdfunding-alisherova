@@ -27,7 +27,7 @@ export const Title = styled.h3`
 
   @media screen and (max-width: 920px) {
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @media (max-width: 576px) {
